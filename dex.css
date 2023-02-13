@@ -1,0 +1,701 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Julee', cursive; */
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+/* #1 section header */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-link {
+    flex-direction: row;
+    text-align: right;
+    flex: 1;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-link a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-link ul li::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background-color: #f44336;
+    transition: all 0.8s;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+.texbook {
+    width: 90%;
+    color: rgba(0, 0, 0, 0.79);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.texbook h1 {
+    font-family: 'Julee', cursive;
+    font-style: italic;
+    font-weight: 10000;
+    font-size: 62px;
+}
+
+.texbook p {
+    margin: 10px 0px 40px;
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+.btn {
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid black;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 34px;
+}
+
+.btn:hover {
+    font-size: 20px;
+    box-shadow: 2px 2px 20px rgb(244, 241, 62);
+    border: 2px solid rgb(242, 121, 139);
+    background-color: rgb(227, 75, 98);
+    transition: all 2s;
+}
+
+#i {
+    display: none;
+}
+
+#d {
+    display: none;
+}
+
+@media (max-width :700px) {
+    .texbook h1 {
+        font-family: 'Julee', cursive;
+        font-style: italic;
+        font-weight: 10000;
+        font-size: 33px;
+    }
+
+    .texbook p {
+        margin: 10px 0px 40px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 6px 17px;
+    }
+
+    .nav-link ul li {
+        padding-bottom: 20px;
+        display: block;
+        padding-top: 22px;
+    }
+
+    .nav-link {
+        position: fixed;
+        background: linear-gradient(to bottom, rgb(210, 235, 97), rgb(128, 228, 128), rgb(135, 211, 239));
+        height: 58vh;
+        width: 30vw;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: all 1.2s;
+    }
+
+    #i {
+        position: absolute;
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    #d {
+        position: sticky;
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-link ul {
+        text-align: center;
+        padding: 40px;
+        padding-left: 15px;
+    }
+}
+
+
+/* #2 section course */
+.course {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.course h1 {
+    font-family: 'Julee', cursive;
+    font-size: 3.3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.course p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px;
+}
+
+.course-col {
+    background-color: lightgoldenrodyellow;
+    flex-basis: 31%;
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: all 0.6s;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px;
+}
+
+.row h3 {
+    font-family: 'Julee', cursive;
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.row p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* #3 section campus */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus h1 {
+    font-family: 'Julee', cursive;
+    font-size: 3.3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.campus p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    display: block;
+    width: 100%;
+}
+
+.layer {
+    background: rgba(230, 227, 227, 0.6);
+    height: 100%;
+
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.4s;
+}
+
+.layer:hover {
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.layer h3 {
+    font-family: 'Julee', cursive;
+    opacity: 0;
+    transition: 0.4s;
+    width: 100%;
+    left: 50%;
+    transition: all 0.5s;
+}
+
+.layer:hover h3 {
+    font-family: 'Julee', cursive;
+    opacity: 1;
+    transform: translateY(200%);
+}
+
+/* #4 section facilities */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities h1 {
+    font-family: 'Julee', cursive;
+    font-size: 3.3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.facilities p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.facilities-col img {
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.facilities-col:hover img {
+    opacity: 1;
+    box-shadow: 2px 2px 20px rgb(244, 244, 149);
+}
+
+.facilities-col p {
+    padding: 5px 9px;
+
+    border-radius: 8px;
+    background-color: lightyellow;
+}
+
+.facilities-col h3 {
+    font-family: 'Julee', cursive;
+    background-color: rgb(154, 196, 231);
+    margin-top: 16px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* #5 section testimonials */
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials h1 {
+    font-family: 'Julee', cursive;
+    font-size: 3.3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.testimonials p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: lightpink;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.testimonials-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p {
+    padding: 0;
+}
+
+.testimonials-col h3 {
+    font-family: 'Julee', cursive;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.material-icons {
+    color: darkorange;
+}
+
+@media (max-width: 700px) {
+    .testimonials-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* #6 section of cta  */
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.cta h1 {
+    font-family: 'Julee', cursive;
+    color: whitesmoke;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+
+.cta .btn:hover {
+    font-size: 30px;
+}
+
+@media (max-width: 700px) {
+    .cta h1 {
+        font-family: 'Julee', cursive;
+        font-size: 24px;
+    }
+}
+
+/* #7 section footer  */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.footer h4 {
+    font-family: 'Julee', cursive;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.icons .fa {
+    font-size: 2rem;
+    color: red;
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 18px 0px;
+}
+
+.fa-html5 {
+    color: blue;
+    padding: 0px 5px;
+}
+
+.fa-css3 {
+    color: orange;
+}
+
+/* index about us file css */
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1 {
+    font-family: 'Julee', cursive;
+    font-size: 3.3rem;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col h1 {
+    text-align: left;
+    font-family: 'Julee', cursive;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 0;
+}
+
+.about-col .btn {
+    color: black;
+    font-weight: bolder;
+}
+
+.about-col .btn:hover {
+    font-size: 30px;
+}
+
+.about-col p {
+    font-size: 21px;
+    padding: 15px 0px 25px;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+/* index Blog file in CSS */
+.blog-contant {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.blog-left {
+    flex-basis: 65%;
+}
+
+.blog-left img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.blog-left h2 {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    font-family: 'Julee', cursive;
+    text-align: left;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+.blog-left h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.blog-left p {
+    color: rgba(0, 0, 0, 0.653);
+    padding: 0px;
+}
+
+.blog-right {
+    flex-basis: 32%;
+}
+
+.blog-right h3 {
+    background-color: #f44336;
+    color: whitesmoke;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    box-sizing: border-box;
+    color: rgb(110, 81, 7);
+}
+
+.blog-right div span {
+    font-size: 20px;
+}
+
+.comment-box {
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 50px 0px;
+}
+
+.comment-box h3 {
+    text-align: left;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: rgb(234, 209, 209);
+}
+
+.comment-form button {
+    margin: 10px 0px;
+}
+
+.comment-form .btn {
+    background-color: black;
+}
+
+@media (max-width: 700px) {
+    .sub-header h1 {
+        font-family: 'Julee', cursive;
+        font-size: 28px;
+    }
+}
+
+/* index Contact Us file in Css */
+
+/* #1 google map section */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;
+}
+.location iframe{
+    width: 100%;
+}
+
+/* #2 contact information section*/
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis:48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: red;
+    margin: 10px ;
+    margin-right: 30px;
+}
+.contact-col div p{
+    color: lightslategray;
+    padding: 0px;
+    font-size: 18px;
+    text-align: left;
+}
+.contact-col div h5{
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.contact-col input, .contact-col textarea{
+    width:100% ;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none ;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.contact-col form .btn{
+    color: black;
+}
