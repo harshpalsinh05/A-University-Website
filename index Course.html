@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="dex.css">
+
+    <!-- google icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- awesome cdn icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fonts link from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- #1 -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt=""></a>
+            <div class="nav-link" id="navlinks">
+                <i id="i" class="material-icons" onclick="hidemenu()">close</i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index about us.html">About</a></li>
+                    <li><a href="index Course.html">Course</a></li>
+                    <li><a href="index Blog.html">Blog</a></li>
+                    <li><a href="index Contact Us.html">ContactUs</a></li>
+                </ul>
+            </div>
+            <i id="d" class="material-icons" onclick="showmenu()">menu</i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!-- #2 -->
+    <section class="course">
+        <h1>We Offer This Courses</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Engineering Courses</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum cumque cum nam fugit quasi, id atque,
+                    quisquam, distinctio officiis quia amet tenetur deserunt vel. Nesciunt, cum.</p>
+            </div>
+            <div class="course-col">
+                <h3>D to D Engineering</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum cumque cum nam fugit quasi, id atque,
+                    quisquam, distinctio officiis quia amet tenetur deserunt vel. Nesciunt, cum.</p>
+            </div>
+            <div class="course-col">
+                <h3>Master's in Engineering</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum cumque cum nam fugit quasi, id atque,
+                    quisquam, distinctio officiis quia amet tenetur deserunt vel. Nesciunt, cum.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- #3 -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi est doloremque quo distinctio ullam qui.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="library.png" alt="">
+                <h3>World's Best Library </h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptatum nobis consectetur ullam
+                    error soluta magni itaque tempora.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="basketball.png" alt="">
+                <h3>Best Basketball Court</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptatum nobis consectetur ullam
+                    error soluta magni itaque tempora.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="cafeteria.png" alt="">
+                <h3>Tasty and Heathly Food</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptatum nobis consectetur ullam
+                    error soluta magni itaque tempora.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- #4-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum nihil, unde ipsa debitis inventore
+            <br>nesciunt mollitia repudiandae provident est maiores, nam nemo delectus aliquid velit?
+        </p>
+
+        <div class="icons">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>
+            Made With Using Only <i class="fa fa-html5"></i> And <i class="fa fa-css3"></i><br> By Harshpalsinh R Jadeja
+        </p>
+        <p>Copyright &COPY; www.bestuniversity.co.in World Best University </p>
+    </section>
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function hidemenu() {
+            navlinks.style.right = "-200px"
+        }
+        function showmenu() {
+            navlinks.style.right = "0"
+        }
+    </script>
+</body>
+
+</html>
