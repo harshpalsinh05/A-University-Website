@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="dex.css">
+
+    <!-- google icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- awesome cdn icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fonts link from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- #1 -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt=""></a>
+            <div class="nav-link" id="navlinks">
+                <i id="i" class="material-icons" onclick="hidemenu()">close</i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index about us.html">About</a></li>
+                    <li><a href="index Course.html">Course</a></li>
+                    <li><a href="index Blog.html">Blog</a></li>
+                    <li><a href="index Contact Us.html">ContactUs</a></li>
+                </ul>
+            </div>
+            <i id="d" class="material-icons" onclick="showmenu()">menu</i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- #2 -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118106.71289493475!2d73.10287414837582!3d22.322087534844396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1676285000002!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- #3 -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>123-098, XYZ Road, ABC Building</h5>
+                        <p>Vadodara-360019, Gujarat, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1_ 0490753298</h5>
+                        <p>Monday To Saturday, From 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5> harshpalsinh05@gmail.com</h5>
+                        <p>Emai Me Your Query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="text" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" placeholder="Message Here" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form> 
+            </div>
+        </div>
+    </section>
+
+    <!-- #4-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum nihil, unde ipsa debitis inventore
+            <br>nesciunt mollitia repudiandae provident est maiores, nam nemo delectus aliquid velit?
+        </p>
+
+        <div class="icons">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>
+            Made With Using Only <i class="fa fa-html5"></i> And <i class="fa fa-css3"></i><br> By Harshpalsinh R Jadeja
+        </p>
+        <p>Copyright &COPY; www.bestuniversity.co.in World Best University </p>
+    </section>
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function hidemenu() {
+            navlinks.style.right = "-200px"
+        }
+        function showmenu() {
+            navlinks.style.right = "0"
+        }
+    </script>
+</body>
+
+</html>
