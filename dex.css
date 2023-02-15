@@ -699,3 +699,17 @@ nav img {
 .contact-col form .btn{
     color: black;
 }
+
+/*  Scrollbar editing */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #adccf4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgoldenrod;
+    border-radius: 10px;
+}
