@@ -5,6 +5,20 @@
     /* font-family: 'Open Sans', sans-serif; */
 }
 
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.dark-theme {
+    --primary-color: white;
+    --secondary-color: black;
+}
+
 /* #1 section header */
 .header {
     min-height: 100vh;
@@ -12,7 +26,6 @@
     background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(banner.jpg);
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
 nav {
@@ -59,6 +72,11 @@ nav img {
     width: 100%;
 }
 
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
 .texbook {
     width: 90%;
     color: rgba(0, 0, 0, 0.79);
@@ -70,6 +88,7 @@ nav img {
 }
 
 .texbook h1 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     font-style: italic;
     font-weight: 10000;
@@ -110,6 +129,7 @@ nav img {
 
 @media (max-width :700px) {
     .texbook h1 {
+        color: var(--primary-color);
         font-family: 'Julee', cursive;
         font-style: italic;
         font-weight: 10000;
@@ -178,6 +198,7 @@ nav img {
 }
 
 .course h1 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     font-size: 3.3rem;
     font-style: italic;
@@ -214,6 +235,7 @@ nav img {
 }
 
 .row h3 {
+    /* color: var(--primary-color);  */
     font-family: 'Julee', cursive;
     font-size: 1.6rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -224,6 +246,7 @@ nav img {
 }
 
 .row p {
+    /* color: var(--primary-color); */
     text-align: justify;
     font-size: 18px;
 }
@@ -243,6 +266,7 @@ nav img {
 }
 
 .campus h1 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     font-size: 3.3rem;
     font-style: italic;
@@ -250,6 +274,7 @@ nav img {
 }
 
 .campus p {
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
@@ -286,6 +311,7 @@ nav img {
 }
 
 .layer h3 {
+    /* color: var(--primary-color); */
     font-family: 'Julee', cursive;
     opacity: 0;
     transition: 0.4s;
@@ -295,6 +321,7 @@ nav img {
 }
 
 .layer:hover h3 {
+    /* color: var(--primary-color); */
     font-family: 'Julee', cursive;
     opacity: 1;
     transform: translateY(200%);
@@ -309,6 +336,7 @@ nav img {
 }
 
 .facilities h1 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     font-size: 3.3rem;
     font-style: italic;
@@ -316,6 +344,7 @@ nav img {
 }
 
 .facilities p {
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
@@ -341,13 +370,14 @@ nav img {
 }
 
 .facilities-col p {
+    color: black;
     padding: 5px 9px;
-
     border-radius: 8px;
     background-color: lightyellow;
 }
 
 .facilities-col h3 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     background-color: rgb(154, 196, 231);
     margin-top: 16px;
@@ -366,6 +396,7 @@ nav img {
 }
 
 .testimonials h1 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     font-size: 3.3rem;
     font-style: italic;
@@ -373,6 +404,7 @@ nav img {
 }
 
 .testimonials p {
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
@@ -399,10 +431,12 @@ nav img {
 }
 
 .testimonials-col p {
+    color: var(--primary-color);
     padding: 0;
 }
 
 .testimonials-col h3 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     margin-top: 15px;
     text-align: left;
@@ -457,6 +491,7 @@ nav img {
 }
 
 .footer h4 {
+    color: var(--primary-color);
     font-family: 'Julee', cursive;
     margin-bottom: 25px;
     margin-top: 20px;
@@ -466,6 +501,7 @@ nav img {
 }
 
 .footer p {
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
@@ -522,6 +558,7 @@ nav img {
 }
 
 .about-col h1 {
+    color: var(--primary-color);
     text-align: left;
     font-family: 'Julee', cursive;
     font-size: 3rem;
@@ -540,6 +577,7 @@ nav img {
 }
 
 .about-col p {
+    color: var(--primary-color);
     font-size: 21px;
     padding: 15px 0px 25px;
 }
@@ -565,6 +603,7 @@ nav img {
 }
 
 .blog-left h2 {
+    color: var(--primary-color);
     text-decoration-line: underline;
     text-decoration-color: red;
     font-family: 'Julee', cursive;
@@ -574,12 +613,13 @@ nav img {
 }
 
 .blog-left h4 {
+    color: var(--primary-color);
     font-size: 1.3rem;
     font-weight: 600;
 }
 
 .blog-left p {
-    color: rgba(0, 0, 0, 0.653);
+    color: var(--primary-color);
     padding: 0px;
 }
 
@@ -589,7 +629,7 @@ nav img {
 
 .blog-right h3 {
     background-color: #f44336;
-    color: whitesmoke;
+    color: var(--primary-color);
     padding: 7px 0px;
     font-size: 16px;
     margin-bottom: 20px;
@@ -624,12 +664,13 @@ nav img {
     padding: 10px;
     margin: 15px 0px;
     box-sizing: border-box;
-    border: none;
+    border-color: 4px solid var(--primary-color);
     outline: none;
     background: rgb(234, 209, 209);
 }
 
 .comment-form button {
+    border-color: var(--primary-color);
     margin: 10px 0px;
 }
 
@@ -647,56 +688,67 @@ nav img {
 /* index Contact Us file in Css */
 
 /* #1 google map section */
-.location{
+.location {
     width: 80%;
     margin: auto;
     padding: 80px 0px;
 }
-.location iframe{
+
+.location iframe {
     width: 100%;
 }
 
 /* #2 contact information section*/
-.contact-us{
+.contact-us {
     width: 80%;
     margin: auto;
 }
-.contact-col{
-    flex-basis:48%;
+
+.contact-col {
+    flex-basis: 48%;
     margin-bottom: 30px;
 }
-.contact-col div{
+
+.contact-col div {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
-.contact-col div .fa{
+
+.contact-col div .fa {
     font-size: 28px;
     color: red;
-    margin: 10px ;
+    margin: 10px;
     margin-right: 30px;
 }
-.contact-col div p{
-    color: lightslategray;
+
+.contact-col div p {
+    color: var(--primary-color);
     padding: 0px;
     font-size: 18px;
     text-align: left;
 }
-.contact-col div h5{
+
+.contact-col div h5 {
+    color: var(--primary-color);
     text-align: left;
     font-size: 22px;
     margin-bottom: 5px;
     font-weight: 500;
 }
-.contact-col input, .contact-col textarea{
-    width:100% ;
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
     padding: 15px;
     margin-bottom: 17px;
-    outline: none ;
+    outline: none;
     border: 2px solid black;
     box-sizing: border-box;
 }
-.contact-col form .btn{
+
+.contact-col form .btn {
+    border: 2px solid var(--secondary-color);
     color: black;
 }
 
