@@ -33,6 +33,7 @@
                     <li><a href="index Course.html">Course</a></li>
                     <li><a href="index Blog.html">Blog</a></li>
                     <li><a href="index Contact Us.html">ContactUs</a></li>
+                    <img src="moon.png " alt="" id="icon">
                 </ul>
             </div>
             <i id="d" class="material-icons" onclick="showmenu()">menu</i>
@@ -157,6 +158,16 @@
         }
         function showmenu() {
             navlinks.style.right = "0"
+        }
+        
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "sun.png "
+            }else{
+                icon.src = "moon.png"
+            }
         }
     </script>
 </body>
